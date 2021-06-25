@@ -1,0 +1,174 @@
+Exp 1
+
+1.
+R= 0.984 +- 0.001 kOhm
+
+2.
+
+Va     |   Vb    |   Vs
+0V     |   0V    |   0.67V
+0V     |  4.94V  |   0.67V
+4.94V  |   0V    |   0.67V
+4.94V  |  4.94V  |   4.94V
+
+
+TTL
+A    |    B    |   S
+0    |    0    |   0
+0    |    1    |   0
+1    |    0    |   0
+1    |    1    |   1
+
+
+CMOS
+A    |    B    |   S
+0    |    0    |   0
+0    |    1    |   0
+1    |    0    |   0
+1    |    1    |   1
+
+A função lógica cuja saída é S, corresponde à função AND entre A e B (função "E").
+
+Exp 2.
+
+1.
+
+Va     |   Vb    |   Vs
+0V     |   0V    |   0.001V
+0V     |  4.94V  |   4.29V
+4.94V  |   0V    |   4.30V
+4.94V  |  4.94V  |   4.29V
+
+
+A    |    B    |   S
+0    |    0    |   0
+0    |    1    |   1
+1    |    0    |   1
+1    |    1    |   1
+
+A função lógica cuja saída é S, corresponde à função OR entre A e B (função "OU").
+
+
+Exp 3
+
+2.
+
+R1= 0.984 +- 0.001 kOhm
+R2= 4.57  +- 0.01  kOhm
+
+Vin    |   Vout
+4.94V  |    0V
+0V     |   4.94V
+
+
+Exp 4
+
+2.
+
+Va    |   Vb   |   Vq0  |   Vq1
+4.94V |  4.94V |  0.12V |  4.94V
+4.94V |   0V   |  4.31V |  0.69V
+0V    |  4.94V |  4.94V |  0.69V
+0V    |   0V   |  0.12V |  0.65V
+
+
+A  |  B  |  Q0  |  Q1
+1  |  1  |   0  |   1
+1  |  0  |   1  |   0
+0  |  1  |   1  |   0
+0  |  0  |   0  |   0
+
+O circuito lógico da figura 4 corresponde à adição binária com carry. 
+Neste caso, a função lógica cuja saída é Q0 corresponde à função XOR entre A e B (função "OU EXCLUSIVO").
+A função lógica cuja saída é Q1 corresponde à função AND entre A e B (função "E").
+
+3.
+
+A  |  B  |  Q0
+0  |  0  |  0
+0  |  1  |  1
+1  |  0  |  1
+1  |  1  |  0
+
+A função lógica cuja saída é Q0 corresponde à função XOR entre A e B (função "OU EXCLUSIVO").
+
+4.
+
+  1001 0010
+- 0010 1010
+____________
+  0110 1000
+ 
+OU
+
+146-42 = 104
+
+
+5.
+
+Va    |   Vb   |   Vq0  |   Vq1
+4.94V |  4.94V |   0V   |    0V
+4.94V |   0V   |  4.94V |    0V
+0V    |  4.94V |  4.94V |   4.94V
+0V    |   0V   |   0V   |    0V
+
+
+A  |  B  |  Q0  |  Q1
+1  |  1  |   0  |   0
+1  |  0  |   1  |   0
+0  |  1  |   1  |   1
+0  |  0  |   0  |   0
+
+A função lógica que o circuito da figura 5 implementa é a subtração binária com borrow.
+
+Exp 5.
+
+2.
+
+C      |  D      |  Q      
+4.94V  |  0V     |  0.141V 
+4.94V  |  4.94V  |  4.30V     
+4.94V  |  0V     |  0.141V 
+4.94V  |  4.94V  |  4.30V  
+----------------------------  Guarda o ultimo valor de Q
+0V     |  4.94V  |  4.30V
+0V     |  0V     |  4.30V   
+0V     |  4.94V  |  4.30V
+0V     |  0V     |  4.30V
+---------------------------- Descarta o valor que tinha guardado
+4.94V  |  0V     |  0.141V 
+4.94V  |  4.94V  |  4.30V     
+
+3. MANDAR PRINT
+
+4.
+
+No caso geral, quando o clock está a 1 e passa para 0, o Q será igual ao último bit guardado no data antes de o clock passar a 0.
+No caso do diagrama, entre D1 e D3, o valor de Q sería 0 porque no instante que o clock passou de 1 para 0, no bit de data estava um 0. Logo, ao passar o 
+clock a 0, congelamos este bit de Data. Assim, no Q ficaria armazenado um 0 (enquanto o clock estiver a 0).
+
+5.
+
+Entre D4 e D7, enquanto o clock for 1, o valor de Q será igual ao valor do bit de data. Portanto, entre C2 e D5 o Q estará a 1, entre D5 e D6 o Q estará a 0,
+entre D6 e C3 o Q será 1.
+
+6.
+
+O circuito lógico (D-flip-flop) é designado por memória de 1 bit porque permite guardar informação (1 bit) com controlo do clock. 
+Por exemplo, entre D1 e C2, mesmo com variacoes nos bits de data e de clock neste intervalo, o valor de Q manteve-se a 0.
+Como já explicado anteriormente, quando o clock está a 1 e passa para 0, o Q será igual ao último bit guardado no data antes de o clock passar a 0,
+conseguindo assim guardar 1 bit.
+
+7.
+
+O sinal de clock serve de comando para controlar e sincronizar todas as operações de um computador.
+O clock permite fazer a sincronização entre todos os bits, no conjunto de todos os circuitos que constituem um computador, ou seja,
+que as operações lógicas sejam síncronas e não haja "mistura" em relação aos dados. 
+Assim, em operações lógicas de 1 byte (8 bits em paralelo), num único ciclo de clock consegue-se receber os inputs, 
+realizar as operações e guardar o resultado. 
+Em suma, o clock serve para marcar o "tempo" e num ciclo, ter tempo suficiente para realizar as operaçoes necessárias e chegar aos resultados que queremos.
+
+
+
+ 
+

@@ -1,0 +1,12 @@
+1) 2^bits - 1
+
+2)  "Razoavelmente App mas impossivel determinar o valor de fs"
+
+3) (Voltage High - Voltage Low) / 2^bits
+https://www.vcalc.com/equation/?uuid=e86d72ab-44e6-11e3-a47b-bc764e049c3d
+
+4) fa x 10^3 x bits (cuidado com a conversao) x 2 canais  (EM MEGABITS!!! cuidado com o kyloBYTES)
+
+5) "Exatamente os valores de App e de fs"
+
+6) fa x 10^3 x bits x 2 sinais x (minutos x 60)

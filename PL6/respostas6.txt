@@ -1,0 +1,115 @@
+Exp 1
+
+1.
+
+R= 11.08 +- 0.01 kOhm
+C= 9.5 +- 0.1 nF
+
+2.
+
+tau = RC = 11080 * 9.5*10^-9 = 0.00010526 s = 0.10526 ms
+
+3.
+
+Ts= 1/f = 1/1000 = 0.001 s = 1.000 ms
+
+4.
+
+Ts/tau = 0.001/0.00010526 = 9.5003
+
+Vc(0.001) = 7.5 * e^ (-9.5003) = 5.612*10^-4 V
+
+8.
+m = -8.8982
+b= 6.2418
+
+POR GRAFICO + TABELA VALORES
+
+9.
+
+ln(Vc) = ln(Vm*e^(-t/tau)) = -t/tau + ln(Vm) = -1/tau *t + ln(Vm)
+
+m= -1/tau
+b= ln(Vm)
+
+10.
+
+m= -1/tau -> -9.5003 = -1/tau -> tau = -1/-9.5003 -> tau= 0.10526 ms
+
+Comparando este valor com o da alínea 2, verificamos que são iguais. Isto porque o declive representa o inverso da constante de tempo
+
+11.
+
+tau = RC -> C = tau/R -> C= 0.10526/11080 = 9.5000*10^-6 F
+
+Comparando o valor calculado do condensador com o medido, verificamos que também são iguais.
+
+
+12.
+
+Ve mantém-se sempre positiva. O condensador, ao carregar, o sentido da corrente gera uma tensão positiva na resistência. Na descarga do condensador, este sentido da corrente
+ir-se-á inverter, descarregando no sentido condensador -> resistências, gerando uma ddp negativa. A função Ch1-Ch2 representa a diferença entre o canal 1 e o canal 2 ou seja, a ddp nas resistências. 
+
+
+
+Exp 2
+
+1.
+
+Ao estarmos a aumentar muito a frequência, o período do sinal irá, pelo contrário, diminuir devido a f=1/T.
+No entanto, a constante de tempo (tau) mantém-se inalterada porque o condensador e as resistências são iguais.
+Ao estarmos a diminuir o período, estamos também a reduzir o tempo que o condensador tem para carregar, nunca carregando assim completamente.
+Como nunca chega a carregar totalmente, a sua descarga também é muito rápida. 
+Vc(t) = Vm * e^-t/tau -> Como a frequência aumenta, t diminui (por ser o inverso da frequencia) com f-> +Inf e t->0, entao -0/tau= 1, e, subsituindo
+na equacao 1, Vc(t) = Vm*1 =Vm, o que dá origem a uma reta.
+Com isto, no osciloscópio apenas visualizamos uma reta tanto para a carga como para a descarga, dando assim um aspeto triangular.
+O valor médio medido de Vc foi de 3.73V, cerca de metade de 7.5V. Isto deve-se ao pouco tempo do ciclo carga-descarga, o Vc será cerca de metade do Vm.
+
+Exp 3.
+
+1.
+
+Vpp medido = 20.4 +- 0.1V 
+Ae medida  = 10.2 +- 0.1V
+
+3.
+
+Grafico excel, eixo X escala logaritmica
+
+4.
+
++Excel
+
+5.
+
+
+Pela equação 2, quando f-> +Inf, w -> +Inf porque w= 2*pi*f. Com isto, a equacao 2 -> 0 logo Ac ->0
+A designação "filtro passa-baixo" deve-se ao facto de a tensão no condensador apenas se manter aproximadamente igual quando a frequência do sinal do gerador tem valores baixos.
+Isto porque lim (w->0) eq 2 = Ae, logo para frequências muito baixas, Ac é aproximadamente igual a Ae.
+Caso a frequencia seja alta, como escrito em cima, Ac tenderá para 0. 
+Resumidamente, um filtro passa baixo permite a passagem de baixas frequências e impede a passagem de frequências altas.
+
+Exp 4.
+
+2.
+
+Neste caso, ao contrário do passado (por termos um circuito CR em vez de um RC), quando temos uma frequência baixa, verificamos que a tensão na resistência é muito baixa, quase 0.
+Pelo contrário, ao aumentarmos a frequência começamos a ver valores de tensão na resistência a tenderem para o valor de tensão do gerador devido ao divisor de tensão criado pelo condensador.
+Pela equação 3, lim (w->0) eq3 = 0  e lim (w -> +Inf) eq3 = Ae. Com isto concluimos que quando a frequência é baixa, a tensão na resistência será aproximadamente 0, e quando é alta, será aproximadamente
+igual à tensão do gerador.
+Resumidamente, um filtro passa alto permite a passagem de altas frequências e impede a passagem de frequências baixas. Quando temos uma frequência baixa, Ar -> 0. Quando temos uma 
+frequencia alta, Ar -> Ae.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

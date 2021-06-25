@@ -1,0 +1,89 @@
+EXP 1
+
+5.
+Temos que Vf= Vamp + Vdiodo + Vr por os componentes se encontrarem em série.
+Organizando de outra forma, temos Vamp = Vf - Vd -Vr
+
+Simplificando a expressão, (Vf-Vd-Vr)/i = Vamp/i
+Da lei de ohm, V=i R,  sabemos que Ramp= Vamp/i
+
+FALTA CALCULAR RESISTENCIA INTERNA USANDO A MEDIA PARA CADA ESCALA
+TABELA MAL -> MEDIA É APENAS PARA VALORES POSITIVOS DE I
+
+6.
+
+O tipo de funcao para representar o comportamento do díodo é uma exponencial. 
+O comportamento do díodo não pode ser representado por uma lei de Ohm simples por não se tratar de uma relação linear entre tensão e corrente.
+A equacao correspondente é y = 3E-11e^34,048x e o coeficiente de determinacao, R² = 0,9982
+
+
+7.
+
+
+Falta fazer grafico onde X= Yn (Vd,n / in)  e Y= in (mA)
+
+
+EXP 2
+
+4.
+
+Para os que têm i>= +3mA fazer X = (Vf- Vled)/i - Ria
+
+X representa, em media, o valor da resistencia que esta a ser utilizada no circuito
+
+FALTA
+
+
+5.
+
+Pelo gráfico, percebemos que o led tem um comportamento de um díodo. Isto porque a corrente apenas passa num sentido e
+apenas a partir do momento em que há uma ddp significativa.
+
+FALTA REPRESENTAR GRAFICAMENTE
+
+
+6.
+
+FALTA O GRAFICO
+
+A partir de 3mA, obtem se uma funcao com um comportamento linear cuja expressao é .... e R^2 é ...
+
+
+7.
+
+A partir dos 3mA, o led tem um comportamento de uma resistencia ohmica porque existe uma relação linear entre a tensao e a corrente.
+Isto acontece a partir do momento em que o led deixa passar corrente.
+
+
+EXP 3
+
+6.
+
+Ao simplificarmos a expressao Vr2/R2 + iz, temos i2 + iz. Analisando o circuito, a soma destas correntes é a corrente total do circuito,
+que por sua vez é a mesma que passa em R1. Podemos escrever as correntes em funcao da corrente que sai da fonte, Ifonte=Iz + I2.
+Em relação à expressao Vr1/R1, sabemos que é igual a i1 ou como dito anteriormente, ao I da fonte. Os resultados diferem ligeiramente devido
+à truncacao de algarismos na medição das correntes.
+
+7.
+
+FALTA
+
+
+8.
+
+Os díodos de sinal apenas deixam a corrente passar num sentido, quando diretamente polarizados. 
+Quando estão inversamente polarizados, não deixam passar corrente.
+
+Os diodos zener quando diretamente polarizados funcionam da mesma maneira que um diodo normal.
+No entanto, o seu uso baseia-se na utilizaçao enquanto inversamente polarizado. Ao colocarmos um diodo inversamente polarizado
+num circuito, após atingirmos a sua ddp de referencia (???), a tensão no ramo do zener vai ser sempre a mesma, igual à sua tensão de referencia.
+Como sabemos da analise de circuitos, dois componentes em paralelo irão ter a mesma tensão. Caso coloquemos qualquer coisa num ramo paralelo
+ao diodo, já sabemos que a ddp desse ramo será igual à ddp do diodo, mesmo que a ddp da fonte mude. Isto é bastante util, por exemplo, no caso
+em que queremos carregar um telemovel a 5V, e controlar esta tensão para estar sempre a 5V usando um diodo que tem como ddp de referencia 5V.
+
+9.
+
+A intensidade de corrente no zener irá	...
+A intensidade de corrente na R1 ....
+A intensidade de corrente na R2 ....
+

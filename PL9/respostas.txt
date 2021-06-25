@@ -1,0 +1,97 @@
+Exp 1
+
+1.1
+500microS/div e 1div  -> 500microS
+1v/div e 2.5div       -> 2.5V
+
+1.2
+Por grafico com Eixos Identificados e unidades
+
+1.3
+
+Td= 0.00244400000 - 0.001928000000 = 0.000512s  tempo que decorre entre 2 cristas consecutivas
+Ad = 2.5V
+
+1.4
+Deltatammostragem = 0.000002s
+
+frequencia de amostragem = 1/0.000002 = 500 000 Hz
+
+
+1.5
+
+Numa amostragem de 1ms e se forem guardados como floats, onde cada float ocupa 4 bytes, o tamanho do ficheiro total seria 200 bytes porque
+como em 1ms existirao 0.001s*500000Hz = 500 amostragens, se cada amostragem valer 4bytes entao o tamanho total será 500 x 4bytes= 2000z bytes.
+
+Exp 2
+
+2.2
+
+Grafico de 2khz e grafico de 4khz e FFT
+
+2KHz
+Td = 0.030/2 = 0.015s
+O período do sinal é de cerca de 0.015s
+A amplitude observada é de 2.5 V.
+Comparativamente ao da pergunta 1.3 temos um erro muito grande ( (0.000512-0.015)/0.000512 *100= 2829.7% ) devido à frequencia de amostragem ser inferior à frequencia do sinal em si.
+
+4KHz
+Td = 0.015/31.5 = 0.000479s 
+A amplitude observada é de 2.5 V.
+Comparativamente ao da pergunta 1.3 temos um erro mais pequeno ( (0.000512-0.000479)/0.000512 *100 = 6.44% ) com esta frequencia de amostragem por ser cerca do dobro da frequencia do sinal.
+Um dos periodos nao aparece no FFT porque apenas mede frequencias até fa/2.
+
+
+2.3
+
+Grafico de 10khz e 20khz e FFT
+
+10KHz
+Existem apenas 1 período cujo valor é 0.0005s
+A amplitude observada é de 2.5 V.
+Comparativamente ao da pergunta 1.3 temos um erro muito pequeno devido à frequência de amostragem ser muito superior à do sinal.
+
+20KHz
+Existem apenas 1 período cujo valor é 0.00051s
+A amplitude observada é de 2.5 V.
+Comparativamente ao da pergunta 1.3 o erro é minimo devido à frequencia de amostragem ser muito superior à do sinal.
+
+Exp 3
+
+3.1 
+
+R1= 22.7 +- 0.1 kOhm
+R2= 465 +- 1 Ohm
+
+VR2max = R2/(R1+R2) * Vg
+Vr2max = 465/(22700+465) * 1
+Vr2max = 0.02007 V
+
+VR2min = 465/(22700+465) * (-1)
+Vr2min = -0.02007 V
+
+3.2
+
+Por grafico
+
+O gráfico apresenta esta forma porque estamos a usar uma frequencia de amostragem muito elevada durante 12ms e durante este tempo, o sinal digitalizado será muito semelhante
+ao sinal em si. (os valores guardados sao multiplos de DeltaV em relacao ao valor Vmin (multiplicados por uma constante).)
+Como podemos ver, a Vr2 é bastante inferior à do sinal original devido à R1 que por ter um valor muito elevado, há uma grande queda de tensão aqui.
+Assim, a tensão de saida (em R2) é bastante baixa, visível pela amplitude do sinal observado. Como esperado, a amplitude obtida empiricamente é muito semelhante à amplitude calculada.
+Como podemos observar, o sinal tem um período de 0.00051s e uma amplitude de 0.020V.
+
+Exp 4
+
+4.1
+
+Pelos dados obtidos e de acordo com o teorema de Nyquist, b) para conseguirmos recuperar muito bem a forma do sinal sinusoidal original necessitamos de uma frequencia de amostragem
+de mais do que o dobro da frequencia do sinal. Quanto maior a frequencia de amostragem, melhor será a apresentacao do sinal original. É devido a este facto que o osciloscópio
+usa uma frequência de amostragem muito elevada para podermos ter fiablidade na observação e análise dos sinais.
+a) Para conseguirmos recuperar mais ou menos a forma do sinal sinusoidal original necessitamos de uma frequencia de amostragem de pelo menos do dobro da do sinal 
+porque assim conseguimos obter bem a amplitude do sinal e razoavelmente a frequência do mesmo.
+
+
+4.2
+
+A maxima frequencia do sinal (fs) que um osciloscópio de frequencia de amostragem = 500Ms/s (ou seja 500MHz) pode analisar com ótimos resultados é de 250 MHz porque, para
+conseguirmos ter resultados ótimos, temos de ter pelo menos uma frequência de amostragem igual ao dobro da frequência do sinal que queremos analisar.

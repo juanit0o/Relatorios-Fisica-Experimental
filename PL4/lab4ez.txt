@@ -1,0 +1,169 @@
+Experiencia 1:
+1.
+Distancia de A medida no ecrã: 2.5 divs
+Incerteza de leitura de A = 0.1 * 2 = 0.2 V
+Tensao maxima do sinal A= 2.5*2 = 5 V  +-  0.2 V
+
+2.
+Distancia de A medida no ecrã: 5 divs
+Incerteza de leitura de A = 0.1 * 1 = 0.1 V
+Tensao maxima do sinal A= 5*1 = 5 V  +-  0.1 V
+
+3.
+Alinea 1 = (0.2/5)*100 = 4%
+Alinea 2 = (0.1/5)*100 = 2%
+
+A incerteza relativa no 1 é o dobro da do exc 2. Isto porque usamos uma escala 2V/div quando 
+ainda é possivel usar uma escala mais aproximada (1V/div como usado na alinea 2) reduzindo assim a incerteza.
+
+4.
+Escala X usada Ex = 100microS/div ; distancia DELTA Xt de 1 periodo = 10.0 divs
+Incerteza de leitura de T: 0.1* 1.0E-4 = 1.0E-5 s
+Periodo T do sinal = 10* 1.0E-4 = 1.0E-3  +-  1.0E-5 s
+
+5.
+Escala X usada Ex= 1.00 ms/div; Distancia DELTAXt' de 10 periodos = 10 divs
+Incerteza de leitura de T' : 0.1* 1.0E-3 = 1.0E-4                   			  
+Intervalo de tempo T' (10 periodos) = 1.0E-3 *10 =  1.0E-2   +- 1.0E-4  
+Periodo T do sinal =  1.0E-3   +-     1.0E-5          
+Frequencia f do sinal = 1000 Hz +- 10 Hz            
+
+
+6.
+O erro relativo, ou seja, (Delta f/f)*100 para o primeiro caso é de (10/1000)*100 = 1%
+O erro relativo, ou seja, (Delta f/f)*100 para o segundo caso é de (10/1000)*100 = 1%
+
+Nos dois casos, o erro relativo será o mesmo porque a incerteza aumenta proporcionalmente com o numero de ciclos
+pelo que não alterará a leitura.
+
+
+
+
+
+
+Experiencia 2:
+1.
+f=1/T (=) T=1/f 
+T= 1/3100 = 3,2258e-4 s = 322,58 microSeg
+
+2.
+Escala X ideal: 322,58/10 = 32.58 microSeg/div
+Escala existente: 50 microS/div
+
+3.
+Escala Y ideal: 3,6/8 = 450 mV/div
+Escala existente: 500mV/div
+
+4.
+Escala X usada Ex = 50microS/div ; distancia DeltaXt de 1 periodo = 6.4 div
+Incerteza de leitura de T: 0.1 * 50 = 5microS
+Calcule o periodo do sinal: T= 1/3100 = 322.58microS  +-  5 microS     		(Diferenca entre a pergunta 1 e esta?)(Confirmar incertezas)
+Frequencia medida = 3100.0062 Hz (??) +- (5E-6/(3.2258E-4)^2)= 48.05 Hz  	(??) (Confirmar estas merdas)
+
+Escala Y usada = 500mV/div ; Distancia de VSpp medida = 7.2 div  	(isto era 7.2 e n 7.4 medimos mal ok? ya ok next)
+Incerteza de leitura de VSpp = 0.1*0.5 = 0.05V 				(?????? n sei se é isto y)
+Tensao pp medida = 0.5* 7.2 = 3.6 V  +- 0.05V				(pfv confirmem estes +- n percebo um crl disto)
+
+6.
+R1= 1.434 +- 0.001 KOhms 
+R2= 2.16 +- 0.01 KOhms
+
+7.
+Escala Y usada: 500mV/div
+Distancia pp medida de VR2pp = 4.4div
+Tensao VR2pp = 0.5*4.4=   2.2V +- 0.05V
+
+Escala X usada: 50microS/div ; distancia X medida de 1 periodo = 6.4div
+Periodo T do sinal: 5E-5*6.4 = 0.00032s = 320microS +- (???)
+Frequencia f do sinal: 1/0.00032 = 3125 Hz +- (????)
+
+8.
+V2pp = Vs * (R2/(R1+R2)) (=) V2pp/Vs = R2/(R1+R2)						  (nao percebi esta kappa)
+A proporcao de tensao que passa em V2 de Vs tem de ser igual ah proporcao em R1+R2 ->(Req) em R2.
+
+V2pp/Vs = 2.2/3.6 = 0.61
+R2/(R1+R2) = 2160/(1434+2160) = 0.61               			(Estes contas n dão bem isto, mas no cadi tbm n dao)
+
+
+9.
+Como as proporçoes da alinea anterior são iguais, a proporcão das amplitudes é constante
+e não há alteracao do periodo logo a frequencia mantem-se.					(nem nesta seus gamers)
+
+
+
+
+
+Experiencia 3
+1.
+w = 2pi*f (=) f = w/2pi
+f = 25132,7/2pi (=) f = 3,999 kHz
+
+4.
+Escala Y = 2.0V/div ; distancia de Ar = 3.1 div
+Amplitude Aresistencia = 2*3.1 =    6.2V  +-  0.1*2=0.2V
+
+6.
+Com a escala Y = 1.0V/div:
+
+AVs= 		7.0 divs = 7.0V
+Aresistencia =  6.2 divs = 6.2V
+
+Avs-Ares= 0.8V +- 0.2V
+Esta diferença de amplitudes deve-se ao facto do díodo usar cerca de 0.8V +- 0.2V para funcionar como condutor. 
+Como sabemos, estes diodos precisam de uma ddp de cerca de 0.7V logo os valores verificados no osciloscopio são coerentes.
+
+
+7.
+Este tempo de atraso que existe na transição positivo -> negativo e vice versa deve-se ao tempo 
+que o diodo demora até ter uma ddp de 0.7 a atravessá-lo, sendo apenas apos este atraso que deixa passar corrente.
+Quando o Vs está a cerca de 0.4V, é apenas nesta altura que o Vres começa a aumentar.             (confirmar foto para ver a diferenca de ddps)
+Na escala de 1.0microS temos que demora cerca de 3divs ou seja 3microS.    		(eu perguntei ao stor e o tropa confirmou os 3 ou 4microS) 
+
+
+8.
+O sinal Vs oscila entre o valores de ddp positivos e negativos. No entanto, o Vres apenas varia em valores positivos.
+Isto porque quando Vs é negativo, o diodo nao está diretamente polarizado logo não ha corrente no circuito, assim a ddp na resistencia é 0V.
+Quando Vs é positivo, o diodo está diretamente polarizado logo deixa passar corrente. Deste modo também passa corrente na resistencia e a própria
+resistencia tambem tem assim ddp positivo.
+Ao analisarmos os sinais graficamente em si, percebemos melhor porque, 
+enquanto o Vs oscila entre a ddps positivas e negativas, Vr apenas varia em ddps positivas
+
+
+
+
+
+Experiencia 4:
+3. 
+No eixo X -> Escala 100mV/div
+7.1 divs logo 0.71V
+
+No eixo Y -> Escala 1V/div
+5divs logo 5V
+
+Enquanto o sinal do gerador varia entre 0V e 5V, a ddp do diodo apenas varia entre 0V e cerca de 0.71V
+Ao analisarmos a curva, quando a o gerador tem uma ddp entre cerca de 0V até 1V, a ddp do diodo aumenta muito rapidamente desde 0V até cerca de 0.6V
+Quando a fonte tem uma ddp >= 1V, a ddp no diodo aumenta muito lentamente desde 0.6V até 0.71V
+
+Como sabemos, o diodo, quando diretamente polarizado, apenas conduz a partir de cerca de 0.7V e mesmo que a ddp da fonte seja muito superior,
+a ddp no díodo manter-se-à sempre nos 0.7V aproximadamente. 
+
+Isto é visivel no osciloscopio quando a fonte está a 2V, a ddp no díodo é cerca de 0.66V
+Quando a fonte está a 5V, a ddp no diodo é cerca de 0.71V.
+Como podemos ver, a diferença na ddp do diodo é muito pouca desde o momento que a fonte ultrapassa a ddp de 1V
+
+O aumento rapido de ddp no diodo quando o gerador está entre 0V e 1V deve-se ao diodo precisar 
+de chegar rapidamente a uma ddp onde permita que passe corrente. A partir daqui, a ddp no diodo já não se altera significativamente.
+  
+
+
+
+
+Como Id=Ir (por estarem em serie)
+
+Vs = Vr + Vd
+Vs = R*Ir + Rd*Id = (R + Rd) * I        (Como R >> Rd então a Req (R+Req) é aproximadamente apenas R)
+Vs = R * I
+
+Como temos uma resistencia ohmica de cerca de 2k2, temos que Vs = 2k2*Id
+
+O gráfico corresponde à curva I-V do díodo porque Vs é igual a 2k2*Id, ou seja, Vs é igual a uma constante multiplicada pela corrente.

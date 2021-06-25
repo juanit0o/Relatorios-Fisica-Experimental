@@ -1,0 +1,144 @@
+Exp 1
+
+1.
+
+f= 37699.1/2pi = 5999.998 Hz
+T=1/5999.998 = 1.666E-4 s
+
+2.
+
+Escala Y: Ey = 2.00V/div  ; distancia Y de Ag1 = 3.7V/div
+Amplitude Ag1 do sinal = 2.00*3.7 = 7.4V +- 0.2 (0.1*2=0.2)		 		PROPAGAR INCERTEZA
+
+3.
+
+Escala Y: Ey = 200mV/div  ; distancia Y de Ag2 = 4.0V/div
+Amplitude Ag2 do sinal = 0.200*4 = 0.80 V +- 0.02 (0.1*0.200=0.02)			PROPAGAR INCERTEZA  VER ESTA MERDA
+
+4.
+
+Ag1/Ag2 = 7.4/0.8 = 9.25 
+Razao aprox 10
+
+5.
+
+A tensão que é medida corresponde ao divisor de tensão que é "criado" quando se usa a ponta de prova no modo x10
+Vm=R0/(R0+Rp)*Vpp = Vm=1/(1+9)*Vpp ou seja Vm=1/10*Vpp => Vm=Vpp/10
+
+
+Exp 2
+
+O valor de Ar/Ag em média é 0.495. Isto porque, como o primário (com mais espiras) está ligado ao gerador, e o 
+secundário (com menos espiras) está ligado à resistencia, e sabemos que N1/N2=V1/V2, ou seja, quanto mais espiras maior
+a ddp. Assim, na resistencia a ddp vai ser menor, logo a razao Ar/Ag, como Ag é maior que Ar, teremos um valor abaixo de 0.
+ 
+3.
+
+Média = 0.495
+Desvio Padrao = 0.00620		
+Erro da media = 0.00187		
+
+Valor da razão Rtr +- DesvioPadrao
+= Ns/Np = V2/V1 = 0.495 +- 0.006  (CONFIRMAR A INCERTEZA AQUI PCAUSA DOS ALGS SIGN)
+
+4.
+Sistema de eqcs
+
+Np+Ns=75	Np=75-Ns		-------			Np=50.167
+Ns/Np= 0.495	Ns/(75-Ns)=0.495	Ns/0.495=75-Ns		Ns=24.833
+
+Incerteza Np(DELTA Np) = |dNp/dRt|*DELTA Rt => (|-75/(1+Rt)^2|)* DELTA Rt => (75/(1+Rt)^2) * 0.00620 => 33.557 * 0.00620 = 0.208
+Incerteza Ns(DELTA Ns) = |dNs/dNp|*DELTA Np => |-1| * Delta Np (igual a de cima) = 0.208
+
+
+5.
+
+AgerPicoPico = 4.72V
+AresPicoPico = 9.36V
+
+6.
+
+AresPP/AgerPP = 9.36/4.72 = 1.983
+
+Ao invertermos a orientacao do transformador no circuito, pusemos o primario (com mais espiras) ligado à resistencia.
+Como ja vimos anteriormente, quanto mais espiras maior será a ddp. Neste caso é cerca do dobro do que na outra orientacao.
+
+Pelo exc 3, temos que a razão de transformação é de 0.495 quando o enrolamento com mais espiras está ligado ao gerador. Ao invertermos a orientação do
+transformador, passamos a ter o inverso da razão de transformaçao, ou seja 1/0.495 = aprox 2.
+
+Os resultados fazem sentido porque no caso passado estavamos a fazer com que a resistencia tivesse
+em média, metade da ddp da fonte, aqui temos o inverso disso, isto é, o dobro.
+
+
+Exp 3
+
+1.
+
+f= 150796.0/2pi = 23999.929 Hz
+
+2.
+
+Escala Y ger = 2.00V/div  		; Ag = 3.7divs
+Escala X ger = 10.0 microSeg/div  	; T=4.2divs
+
+Ag = 2.00*3.7 = 7.4V +- 0.2  (0.1*2=0.2)    									CALCULAR INCERTEZA 
+freq = 1/T = 1/(10E-6 * 4.2) = 1/0.000042 = 23809.524 Hz +- 566.893     ((0.1*10E-6)/(0.000042^2) = 566.893)  	CALCULAR INCERTEZA E CONFIRMAR ALGARISMOS SIGN P TODAS
+
+3.
+
+Escala Y res = 1.00V/div  		; Ag = 2.4divs
+Escala X res = 10.0 microSeg/div  	; T=2.1divs
+
+Ag = 1.00*2.4 = 2.4V +- 0.1  (0.1*1=0.1)											CALCULAR INCERTEZA 
+freq = 1/T = 1/(10E-6 * 2.1) = 1/0.000021 = 47619.048 Hz +- 2267.574  ((0.1*10E-6)/(0.000021^2)= 2267.574)			(????)	CALCULAR INCERTEZA
+
+freqRES/freqGER = 47619.048/23809.524 = 2
+
+A frequencia do sinal na resistencia é o dobro da do sinal que sai do gerador. Isto acontece porque, como temos uma ponte
+de diodos, a tensão na resistencia estará sempre com ddps positivas ou 0 momentaneamente quando há troca do sinal do gerador,
+ou seja, quando o sinal do gerador atinge um máximo positivo, o sinal na resistência também atinge o seu maximo nesse instante 
+(embora a ddp seja menor devido à ddp precisa pelos diodos)
+e quando o sinal no gerador atinge o minimo negativo, o sinal na resistência atinge o mesmo máximo positivo atingido anteriormente como
+vemos pela fotografia.
+Isto acontece porque com a ponte de díodos, a resistencia terá sempre uma ddp positiva, relativamente à ddp alternada do gerador
+devido à combinaçao dos varios diodos com determinadas orientacoes. Ao analisarmos os dois sinais, sempre que passa 1 periodo para
+o sinal do gerador, passam 2 periodos para o sinal da resistencia logo a frequência é o dobro.
+
+
+Exp 4
+
+2.
+
+Ao colocarmos um condensador de 100nF em paralelo com a resistencia, obtemos um sinal quase constante, isto é, a tensão na resistencia vai "saindo" do seu ramo
+mais lentamente devido ao armazenamento de carga no condensador.
+
+POR IMAGEM TEK3
+
+3.
+
+Ao colocarmos um condensador de 10microF em paralelo com a resistencia, obtemos um sinal ainda mais alisado do que com o condensador anterior. Este condensador por ser
+maior do que o anterior, possui uma maior capacidade, ou seja, armazena mais energia. Deste modo, irá descarregar muito lentamente e será capaz de ter uma ddp constante,
+que por estar em paralelo com a resistencia, esta tambem terá a ddp constante.
+
+POR IMAGEM TEK4
+
+3.Condensador que o stor mandou
+
+Ao colocarmos um condensador de 9nF em paralelo com a resistencia, obtemos um sinal que oscila bastante mas consegue armazenar alguma, embora pouca, carga. Deste modo, permite que a ddp
+na resistencia se mantenha por pouco tempo, reduzindo drasticamente devido à baixa capacidade do condensador como podemos ver no osciloscopio.
+
+POR IMAGEM TEK5
+
+4.
+
+A designacao de "fonte de alimentação retificada" deve-se ao facto de a partir de uma fonte de tensão alternada, neste caso estudado, sinusoidal, obter uma tensão constante (com um valor mais baixo do que a original)
+Isto é possível devido a vários componentes, o transformador permite-nos alterar a tensão (amplitude), os diodos permitem aproveitar a ddp tanto positiva como negativa e no condensador que permite armazenar carga e
+deste modo obter uma ddp constante que ao colocado em paralelo com uma resistencia (telemovel, mp3, etc) esta terá a mesma ddp.
+Um circuito deste tipo é essencial para que um aparelho eletrónico tenha possibilidade de estar sempre a funcionar e não se desligar com uma frequencia alta (caso usassemos por ex um condensador com baixa capacidade ou
+um diodo apenas fazendo assim uma retificacao de meia onda).
+
+
+
+
+
+
